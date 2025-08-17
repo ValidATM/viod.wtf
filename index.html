@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>viod.wtf - A Discord Developer's Legacy</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #eee;
+}
+header {
+  background: #181818;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ff4081;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #aaa;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 230px;
+  background: #141414;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #333;
+  padding-top: 80px;
+}
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #ccc;
+  transition: background 0.3s;
+}
+.sidebar a:hover {
+  background: #222;
+  color: #ff4081;
+}
+.content {
+  margin-left: 230px;
+  padding: 40px;
+  max-width: 900px;
+}
+section {
+  margin-bottom: 60px;
+}
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff4081;
+}
+section p {
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>viod.wtf</h1>
+  <p>A Discord Developer Who Left a Mark</p>
+</header>
+
+<div class="container">
+  <nav class="sidebar">
+    <a href="#intro">Introduction</a>
+    <a href="#contributions">Contributions</a>
+    <a href="#skills">Skills</a>
+    <a href="#legacy">Legacy</a>
+    <a href="#farewell">Farewell</a>
+  </nav>
+
+  <main class="content">
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p><strong>viod.wtf</strong> was a well-known developer in the Discord community. Known for their expertise in Python and C++, they built and maintained tools, bots, and guides that inspired other developers.</p>
+    </section>
+
+    <section id="contributions">
+      <h2>Contributions</h2>
+      <p>Throughout their time as a Discord developer, viod.wtf created powerful Discord bots, explored the Discord API deeply, and shared knowledge with fellow developers. They pushed the limits of what was possible with custom bots, automation, and integrations.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>viod.wtf was highly skilled in:</p>
+      <ul>
+        <li><strong>Python</strong> – Building Discord bots, automation scripts, and API clients.</li>
+        <li><strong>C++</strong> – Low-level performance programming, experimental tools, and libraries.</li>
+      </ul>
+    </section>
+
+    <section id="legacy">
+      <h2>Legacy</h2>
+      <p>Even though viod.wtf has stepped away from Discord development, their work remains in the community. Countless developers learned from their code and tutorials, and their impact can still be felt in projects that use their ideas.</p>
+    </section>
+
+    <section id="farewell">
+      <h2>Farewell</h2>
+      <p>After years of contributions, viod.wtf decided to leave Discord development. While their presence is missed, their legacy continues through the developers they inspired.</p>
+      <p>This page stands as a tribute to their skills, passion, and the mark they left behind.</p>
+    </section>
+  </main>
+</div>
+
+<script>
+const links = document.querySelectorAll('.sidebar a');
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+</body>
+</html>
